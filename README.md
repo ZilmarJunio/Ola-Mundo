@@ -1,2 +1,2 @@
-# Ola Mundo
+# Olá, Mundo!
  Primeiro repositório de aprendizado
