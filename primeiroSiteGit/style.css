@@ -1,0 +1,13 @@
+h1#tituloPrincipal{
+
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+p{
+
+    font-size: x-large;
+    position: relative;
+    left: 15%;
+}
