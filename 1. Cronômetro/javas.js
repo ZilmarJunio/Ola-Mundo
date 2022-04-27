@@ -1,13 +1,12 @@
 //Cronômetro
+var nome = prompt("Insira o seu nome.");
 
-let segundos = 2
+document.writeln(`<p id="bemvindo">Welcome ${nome}</p>`)
 
-for (let index = segundos; 1 <= index; index-=1) {
-    
-    setTimeout(() => {
+let Cronometro = document.getElementById('')
 
-    console.log(index);        
-    
-    }, segundos*1000);
+function Cronometrar() {
+
+    document.writeln('TESTE')
 
 }

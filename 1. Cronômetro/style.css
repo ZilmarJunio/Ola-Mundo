@@ -1,13 +1,19 @@
-h1#tituloPrincipal{
+/*h1#tituloPrincipal{
 
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     
+}*/
+
+body#principalBody{
+
+    background-color: rgb(133, 132, 132);
+
 }
 
-p{
+div#Cronom{
 
-    font-size: x-large;
-    position: relative;
-    left: 15%;
+    text-align:center;
+    background-color: rgb(95, 61, 61);
+    color: black;
 }
