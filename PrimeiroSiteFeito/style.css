@@ -1,0 +1,172 @@
+@font-face{
+    font-family: "Qualy";
+    src: url("qualy.bold.ttf");
+  
+  }
+
+  body{
+    
+    background-color: rgb(0,0,0,60); 
+    background-image: url("https://i1.wp.com/www.portaldonerd.com.br/wp-content/uploads/2020/09/the-boys-1564564650.jpg?fit=3000%2C1895&ssl=1");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    scroll-behavior: smooth;
+      
+  }
+
+  /*img*/
+
+  img#welcomeImg{
+
+    opacity: 0.5;
+    top:400px; 
+    position:fixed;
+    left: 46px;
+    border-radius: 10px;
+    float: left;
+    margin: 1px 4px 0 0;
+    padding: 3px;
+    background-color: #a50808;
+    border: 1px solid hsl(0, 86%, 58%);
+  }
+
+  img#welcomeImg:hover{
+
+    opacity: 1;
+
+  }
+
+  img#logo{
+
+    position: fixed;
+    left: 8px;
+    bottom: 580px;
+    opacity: 0.6;
+    cursor: context-menu;
+
+  }
+
+  img#logo:hover{
+
+    color: darkred;
+    opacity:1;
+    
+  }
+
+  p#bemvindo{
+
+    font: normal 38px Qualy;
+    color: white;
+    background-color:black;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 438px;
+    margin-left: 40px; 
+
+  }
+
+  p#theSeven{
+
+    cursor: context-menu;
+    font: normal 60px Qualy; 
+    color: red; 
+    opacity: 0.5;
+
+  }
+
+  p#theSeven:hover{
+
+    opacity:1;
+
+  }
+
+  /*div*/
+
+  /*div#titulo1{
+    
+    position: fixed;
+    margin-top: 135px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    visibility: visible;
+    font-family: Qualy;
+    cursor: context-menu;
+
+  }*/
+
+  /*div#titulo1Fundo{
+
+    width: 400px;
+    height: 160px;
+    opacity: 30%;
+    margin-top: -200px;
+    margin-left: 160px;
+
+  }*/
+
+  div#barraEscolha{
+
+    position: fixed;
+    bottom: 30px;
+    left: 1250px;
+    visibility: visible;
+    font: normal 35px Qualy;
+    color: white;
+    width: 300px;
+    height: 740px;
+    text-align: center;
+    
+  }
+
+  div#textinho{
+
+    position: relative;
+    left: 460px;
+    top: 0px;
+    visibility: visible;
+    color: white;
+    width: 700px;
+    height: 440px;
+    text-align: center;
+
+  }
+  /*iframe*/
+  iframe#trailerFinal{
+   
+    position: absolute;
+    left: 440px;
+    top: 580px;
+    margin-bottom: 100px;
+
+  }
+  /*a*/
+  a#maisInfo{
+
+    position: fixed;
+    top: 670px;
+
+  }
+
+  a{
+
+    color: white;  
+    
+  }
+
+  a#escolha5{
+
+    opacity: 0.3;
+
+  }
+
+  a#escolha5:hover{
+
+    opacity: 1;
+  
+  }
