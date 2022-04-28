@@ -7,13 +7,56 @@
 
 body#principalBody{
 
-    background-color: rgb(133, 132, 132);
+    margin:0cm;  
+    background-color: rgb(22, 40, 68);
+    animation: fadeIn linear 4s;
+
 
 }
 
 div#Cronom{
 
     text-align:center;
-    background-color: rgb(95, 61, 61);
-    color: black;
+    font-size: 30pt;
+    background-color: rgb(28, 37, 53);
+    color: rgb(255, 255, 255);
 }
+
+p#bemvindo{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:center;
+
+}
+
+button#but{
+
+  border-color: black;
+  font-size: 20pt;
+
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
