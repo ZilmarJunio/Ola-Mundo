@@ -1,24 +1,24 @@
 //Cronometro
+let campoTempo = document.getElementById('campoTempo')
 
 let horas = document.getElementById('hora');
 let minutos = document.getElementById('minuto');
 let segundos = document.getElementById('segundo');
 
-let hora = 0, minuto = 0, segundo = 0
+let hora = 0, minuto = 0, segundo = 55
 let interval
 
 function Start(){
 
-  startb = document.getElementById('start').id = 'start1'
+  document.getElementById('start').id = 'start1'
 
   interval = setInterval(function Somar(){
     
     segundo++;
     segundo = testeMenor10(segundo)
-    segundos.innerHTML = `${segundo}`
     
-    if(segundo === 60) {
-
+    if(segundo === 60) { 
+  
       plusMinuto() 
 
     } 
@@ -29,13 +29,15 @@ function Start(){
 
     } 
 
-  }, 1000);
+    segundos.innerHTML = `${segundo}`
+
+  }, 100);
 
 } 
 
 function plusMinuto() {
   
-  segundo = 0
+  segundo = '0' + 0
 
   minuto++
   minuto = testeMenor10(minuto)
@@ -45,7 +47,7 @@ function plusMinuto() {
 
 function plusHora() {
   
-  minuto = 0
+  minuto = '0' + 0
 
   hora++
   hora = testeMenor10(hora)
