@@ -1,34 +1,42 @@
 /*Cronometro*/
 
 body#corpoPagina{
-background-color: rgb(5, 10, 10);
+background-image: linear-gradient(to right, rgb(16, 32, 32) , rgb(6, 27, 27));
 animation: fadeIn linear 7s;
+margin: 0;
 }
 
 div#campoTempo{
-  font-size: 80pt;
+  font-size: 60pt;
   text-align: center;
+  background-color: rgb(8, 31, 31);
   color: antiquewhite;
 }
 
 div#campoControle{
   text-align: center;
+  background-color: rgb(16, 32, 32);
   color: rgb(215, 220, 210);
 }
 
 /*Buttons: */
 
 button#start{
+  
+  border-radius: 15%;
+  border-left: 1px solid #000;;
   font-size: 30pt;
   background-color: #000;
   color: aliceblue;
 }
 button#pause{
+  border-radius: 15%;
   font-size: 30pt;
   background-color: #000;
   color: aliceblue;
 }
 button#reset{
+  border-radius: 15%;
   font-size: 30pt;
   background-color: #000;
   color: aliceblue;
