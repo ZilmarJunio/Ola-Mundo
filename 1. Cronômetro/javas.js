@@ -8,43 +8,62 @@ let principalBody = document.getElementById('principalBody')
 
 let Count = document.getElementById('Count')
 
-function Cronometrar() {
+"use strict";
 
-    let horas=0, minutos=0, segundos=1
+let hour = 0;
+let minute = 0;
+let second = 0;
+let millisecond = 0;
 
-    for (horas = 0; horas <= 24; horas++) {
-       
-        setTimeout(() => {
-            horas < 10 && minutos < 10 && segundos < 10  ? Count.innerHTML = `0${horas}:0${minutos}:0${segundos}` : 
-            horas < 10 && minutos < 10 ? Count.innerHTML = `0${horas}:0${minutos}:${segundos}` :
-            horas < 10 ? Count.innerHTML = `0${horas}:${minutos}:${segundos}` : null
-            
-        }, horas*1000);
+let cron;
 
-        for(minutos = 0; minutos <= 59; minutos++){
-            
-            setTimeout(() => {
+document.form_main.start.onclick = () => start();
+document.form_main.pause.onclick = () => pause();
+document.form_main.reset.onclick = () => reset();
 
-                horas < 10 && minutos < 10 && segundos < 10  ? Count.innerHTML = `0${horas}:0${minutos}:0${segundos}` : 
-                horas < 10 && minutos < 10 ? Count.innerHTML = `0${horas}:0${minutos}:${segundos}` :
-                horas < 10 ? Count.innerHTML = `0${horas}:${minutos}:${segundos}` : null
-        
-            }, minutos*1000);
+    function start() {
+        pause();
+        cron = setInterval(() => { timer(); }, 10);
+      }
+      
+      function pause() {
+        clearInterval(cron);
+      }
+      
+      function reset() {
+        hour = 0;
+        minute = 0;
+        second = 0;
+        millisecond = 0;
+        document.getElementById('hour').innerText = '00';
+        document.getElementById('minute').innerText = '00';
+        document.getElementById('second').innerText = '00';
+      }
 
-            for(segundos = 1; segundos <= 59; segundos++){
+    function timer() {
 
-                setTimeout(() => {
-                    horas < 10 && minutos < 10 && segundos < 10  ? Count.innerHTML = `0${horas}:0${minutos}:0${segundos}` : 
-                    horas < 10 && minutos < 10 ? Count.innerHTML = `0${horas}:0${minutos}:${segundos}` :
-                    horas < 10 ? Count.innerHTML = `0${horas}:${minutos}:${segundos}` : null
-        
-                }, segundos*1000);
-
-            }
-
+        if ((millisecond += 10) == 1000) {
+          millisecond = 0;
+          second++;
         }
+
+        if (second == 60) {
+          second = 0;
+          minute++;
+        }
+
+        if (minute == 60) {
+          minute = 0;
+          hour++;
+        }
+
+        document.getElementById('hour').innerText = returnData(hour);
+        document.getElementById('minute').innerText = returnData(minute);
+        document.getElementById('second').innerText = returnData(second);
     }
-    
+      
+      function returnData(input) {
+        return input > 10 ? input : `0${input}`
     }
 
 function changeTheme() {
