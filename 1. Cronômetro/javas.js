@@ -1,6 +1,4 @@
-//Cronômetro
-/*var nome = prompt("Insira o seu nome.");
-document.writeln(`<p id="bemvindo">Bem vindo (a) ${nome}!</p>`)*/
+//Cronometro
 
 let hora = 0, minuto = 0, segundo = 0;
 let horas = document.getElementById('hora');
