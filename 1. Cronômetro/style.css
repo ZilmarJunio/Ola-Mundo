@@ -1,26 +1,37 @@
 /*Cronometro*/
 
 body#corpoPagina{
-
 background-color: rgb(5, 10, 10);
 animation: fadeIn linear 7s;
-
 }
 
 div#campoTempo{
-
   font-size: 80pt;
   text-align: center;
   color: antiquewhite;
-
 }
 
 div#campoControle{
-
-  font-size: 60pt;
   text-align: center;
   color: rgb(215, 220, 210);
+}
 
+/*Buttons: */
+
+button#start{
+  font-size: 30pt;
+  background-color: #000;
+  color: aliceblue;
+}
+button#pause{
+  font-size: 30pt;
+  background-color: #000;
+  color: aliceblue;
+}
+button#reset{
+  font-size: 30pt;
+  background-color: #000;
+  color: aliceblue;
 }
 
 @keyframes fadeIn {
@@ -28,22 +39,22 @@ div#campoControle{
     100% {opacity:1;}
   }
   
-  @-moz-keyframes fadeIn {
+@-moz-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
   }
   
-  @-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
   }
   
-  @-o-keyframes fadeIn {
+@-o-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
   }
   
-  @-ms-keyframes fadeIn {
+@-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
   }
