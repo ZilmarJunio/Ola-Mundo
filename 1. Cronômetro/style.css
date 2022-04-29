@@ -1,7 +1,7 @@
 /*Cronometro*/
 
 body#corpoPagina{
-background-image: linear-gradient(to right, rgb(16, 32, 32) , rgb(6, 27, 27));
+background-image: linear-gradient(to right, rgb(16, 32, 32) , rgb(28, 128, 128));
 animation: fadeIn linear 7s;
 margin: 0;
 }
@@ -25,15 +25,19 @@ button#start{
   
   border-radius: 15%;
   border-left: 1px solid rgb(255, 255, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 30pt;
   background-color: #000;
   color: aliceblue;
+
+
 }
 
 button#start1{
   
   border-radius: 15%;
   border: 1px solid #000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 30pt;
   background-color: #000;
   color: aliceblue;
@@ -41,12 +45,14 @@ button#start1{
 
 button#pause{
   border-radius: 15%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 30pt;
   background-color: #000;
   color: aliceblue;
 }
 button#reset{
   border-radius: 15%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 30pt;
   background-color: #000;
   color: aliceblue;

@@ -63,6 +63,7 @@ function Pause() {
   
   document.getElementById('start1').id = 'start'
   document.getElementById('start').innerHTML = 'Continue'
+  
   clearInterval(interval)
 
 }
