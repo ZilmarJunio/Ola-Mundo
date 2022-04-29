@@ -24,11 +24,21 @@ div#campoControle{
 button#start{
   
   border-radius: 15%;
-  border-left: 1px solid #000;;
+  border-left: 1px solid rgb(255, 255, 255);
   font-size: 30pt;
   background-color: #000;
   color: aliceblue;
 }
+
+button#start1{
+  
+  border-radius: 15%;
+  border: 1px solid #000;
+  font-size: 30pt;
+  background-color: #000;
+  color: aliceblue;
+}
+
 button#pause{
   border-radius: 15%;
   font-size: 30pt;

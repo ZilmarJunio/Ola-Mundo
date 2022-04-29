@@ -9,7 +9,7 @@ let interval
 
 function Start(){
 
-let buttonStart =
+  startb = document.getElementById('start').id = 'start1'
 
   interval = setInterval(function Somar(){
     
@@ -61,6 +61,8 @@ function Reset() {
 
 function Pause() {
   
+  document.getElementById('start1').id = 'start'
+  document.getElementById('start').innerHTML = 'Continue'
   clearInterval(interval)
 
 }
