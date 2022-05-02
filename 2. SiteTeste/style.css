@@ -1,8 +1,68 @@
+/*
+O HTML desta página resumidamente: Possui uma div (class: Container) 
+que por sua vez possui uma div (class: header) "cabeça" do projeto
+após -> Temos a parte central, o "form", ------------------------>
+que é onde ficará os campos (Labels + Campos de imput) Labels são 
+um breve título que indica qual informação deve ser inserida no 
+determinado campo. Todos possuindo ids, e classes | Para uso no CSS e JS
+*/
+
+*{
+    box-sizing: border-box;
+}
+
 body{
+    background-color: #9b59b6; /*Cor do background*/
+    font-family: 'Open Sans', sans-serif; /*Define a família da fonte e outros atributos*/
+    display: flex; /*???*/
+    align-items: center; /*???*/
+    justify-content: center; /*Coloca todo "content" no "center" da página*/
+    min-height: 100vh; 
+    margin: 0; /*Margem 0 (Margem é a borda que fica quando uma imagem/background é inserido)*/
+}
 
-    background-image: url('./imagenssiteteste/bannerPCfinalnormal.jpg');
-    background-attachment: fixed;
-    background-size: 100%;
-    background-position: center;
+.container{
+    background-color: #fff; /* --- */
+    border-radius: 5px; /*Raio de curvatura da borda do objeto*/
+    box-shadow: 6px 6px 1em gold; /*Projeta uma sombra ao redor da "caixa"*/
+    overflow: hidden;
+    width: 500px; /*Define o tamanho do container*/
+    max-width: 100%; /*Importante para mobiles*/
+}
 
+.header{
+    background-color: rgb(236, 236, 236);
+    border-bottom: 1px rgb(168, 168, 168);
+    padding: 20px 40px;
+}
+
+.header h2{
+    margin: 0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+
+.form-control input{
+    border: 2px solid rgb(168, 168, 168);
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
 }
