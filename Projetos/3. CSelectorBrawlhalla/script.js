@@ -38,7 +38,7 @@ let brawlhalla = [
     'Kaya',
     'Isaiah',
     'Jiro',
-   ' Lin Fei',
+   'Lin Fei',
     'Zariel',
     'Rayman',
     'Dusk',
