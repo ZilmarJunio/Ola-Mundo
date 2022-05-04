@@ -1,3 +1,7 @@
+let Legend_1 = document.getElementById('firstc')
+let Legend_2 = document.getElementById('secondc')
+let Legend_3 = document.getElementById('thirdc')
+
 let brawlhalla = [
     'Bödvar', 
     'Cassidy',
@@ -56,4 +60,4 @@ let brawlhalla = [
     'Arcadia'
 ]
 
-    console.log(brawlhalla[Math.floor(Math.random() * brawlhalla.length)]);
+    //document.writeln(brawlhalla[Math.floor(Math.random() * brawlhalla.length)]);
