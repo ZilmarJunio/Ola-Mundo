@@ -1,6 +1,9 @@
-let Legend_1 = document.getElementById('firstc')
-let Legend_2 = document.getElementById('secondc')
-let Legend_3 = document.getElementById('thirdc')
+let Legend_1 = document.getElementById('firstc');
+let Legend_2 = document.getElementById('secondc');
+let Legend_3 = document.getElementById('thirdc');
+
+let Interval, Interval2, Interval3;
+let count2 = 20, count3 = 30, count1 = 10;
 
 let brawlhalla = [
     'Bödvar', 
@@ -60,14 +63,38 @@ let brawlhalla = [
     'Arcadia'
 ]
 
-    for(let index = 20 ; index > 0 ; i--){
+function runInterval(){
 
-        setTimeout(() => {
+    Interval = setInterval(() => {
+       
+        let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
+        Legend_1.innerHTML = `${randomL}`
+        if(count1 == 0){clearInterval(Interval)}
+        console.log(Legend_1);
+        count1--;
 
-            Legend_1 = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
+    }, 100);
 
-        }, 1000);
+    Interval2 = setInterval(() => {
+       
+        let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
+        Legend_2.innerHTML = `${randomL}`
+        if(count2 == 0){clearInterval(Interval2)}
+        console.log(Legend_1);
+        count2--;
 
-    }
+    }, 100);
+    
+    Interval3 = setInterval(() => {
+       
+        let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
+        Legend_3.innerHTML = `${randomL}`
+        if(count3 == 0){clearInterval(Interval3)}
+        console.log(Legend_1);
+        count3--;
 
-    //document.writeln(brawlhalla[Math.floor(Math.random() * brawlhalla.length)]);
+    }, 100);
+
+}
+
+runInterval()

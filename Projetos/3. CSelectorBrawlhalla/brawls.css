@@ -4,13 +4,20 @@ body{
     background-color: black;
     justify-content: center;
     text-align: center;
+    font-family: sans-serif;
 }
 
 div#corpo{
 
-    font-family: sans-serif;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(7, 7, 7);
     font-size: 18pt;
     color: yellow;
+    border-radius: 2%;
   
+}
+
+p#yl{
+
+color: rgb(100, 170, 200);
+
 }
