@@ -1,0 +1,16 @@
+body{
+    box-sizing: border-box;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+}
+
+div#corpo{
+
+    font-family: sans-serif;
+    background-color: rgb(48, 48, 48);
+    font-size: 18pt;
+    color: yellow;
+  
+}

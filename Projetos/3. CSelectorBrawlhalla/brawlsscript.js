@@ -60,4 +60,14 @@ let brawlhalla = [
     'Arcadia'
 ]
 
+    for(let index = 20 ; index > 0 ; i--){
+
+        setTimeout(() => {
+
+            Legend_1 = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
+
+        }, 1000);
+
+    }
+
     //document.writeln(brawlhalla[Math.floor(Math.random() * brawlhalla.length)]);
