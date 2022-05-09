@@ -25,7 +25,7 @@ function runInterval(){
         count1--;
 
     }, 100);
-
+ 
     Interval2 = setInterval(() => {
        
         let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
