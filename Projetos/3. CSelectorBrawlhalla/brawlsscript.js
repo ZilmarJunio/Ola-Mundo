@@ -48,4 +48,10 @@ function runInterval(){
 
 }
 
+function Reset() {
+  
+    document.location.reload(true);
+  
+  }
+
 runInterval()

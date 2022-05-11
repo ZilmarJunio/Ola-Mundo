@@ -1,23 +1,30 @@
 body{
     box-sizing: border-box;
     align-items: center;
-    background-color: black;
+    background-color: rgb(85, 184, 226);
     justify-content: center;
     text-align: center;
     font-family: sans-serif;
 }
 
 div#corpo{
-
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(100, 170, 200);
     font-size: 18pt;
-    color: yellow;
+    color: rgb(250, 250, 121);
     border-radius: 2%;
-  
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 p#yl{
+    color: rgb(0, 0, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
 
-color: rgb(100, 170, 200);
-
+button#mybutao{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(100, 170, 200);
+    border-style:hidden;
 }
