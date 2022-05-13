@@ -3,6 +3,7 @@ let Legend_2 = document.getElementById('secondc');
 let Legend_3 = document.getElementById('thirdc');
 
 let Interval, Interval2, Interval3;
+let count2 = 0, count3 = 0, count1 = 0;
 
 let brawlhalla = [
     'Bödvar', 'Cassidy','Orion','Lord Vraxx','Gnash','Queen Nai','Hattori','SirRoland',
@@ -15,15 +16,17 @@ let brawlhalla = [
 
 function runInterval(){
 
-    let count2 = 20, count3 = 30, count1 = 10;
+    count2 = 20, count3 = 30, count1 = 10;
 
     Interval = setInterval(() => {
        
         let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
         Legend_1.innerHTML = `${randomL}`
-        if(count1 == 0){clearInterval(Interval);
-            fontColorb(1)}
-        console.log(Legend_1);
+        if(count1 == 0){
+            fontColorb(1)
+            clearInterval(Interval);
+            }
+        
         count1--;
 
     }, 100);
@@ -32,9 +35,11 @@ function runInterval(){
        
         let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
         Legend_2.innerHTML = `${randomL}`
-        if(count2 == 0){clearInterval(Interval2);
-            fontColorb(2)}
-        console.log(Legend_1);
+        if(count2 == 0){
+            fontColorb(2)
+            clearInterval(Interval2);
+            }
+        
         count2--;
 
     }, 100);
@@ -43,10 +48,12 @@ function runInterval(){
        
         let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
         Legend_3.innerHTML = `${randomL}`
-        if(count3 == 0){clearInterval(Interval3);
-            fontColorb(3)}
-        console.log(Legend_1);
-        count3--;
+        if(count3 == 0){
+            fontColorb(3)
+            clearInterval(Interval3);
+            }
+        
+        if(count3 > 0){count3--;}
 
     }, 100);
 
@@ -54,16 +61,18 @@ function runInterval(){
 
 function Reset() {
     
-    fontColory()
-    runInterval()
-  
+    if (count3 == 0) {
+        fontColory()
+        runInterval()
+    }
+
   }
 
   function fontColory() {
       
-    Legend_1.style.color = "rgb(250, 250, 121)";
-    Legend_2.style.color = "rgb(250, 250, 121)";
-    Legend_3.style.color = "rgb(250, 250, 121)";
+    Legend_1.style.color = "rgb(0, 0, 0)";
+    Legend_2.style.color = "rgb(0, 0, 0)";
+    Legend_3.style.color = "rgb(0, 0, 0)";
 
   }
 
@@ -72,21 +81,23 @@ function Reset() {
     switch (value) {
         case 1:
             
-            Legend_1.style.color = "rgb(0, 0, 0)";
+            Legend_1.style.color = "rgb(250, 250, 121)";
 
             break;
         case 2:
             
-            Legend_2.style.color = "rgb(0, 0, 0)";
+            Legend_2.style.color = "rgb(250, 250, 121)";
 
             break;
         case 3:
             
-            Legend_3.style.color = "rgb(0, 0, 0)";
+            Legend_3.style.color = "rgb(250, 250, 121)";
 
             break;
         default:
+
             console.log('Error: Verify fontColorb() function!');
+
             break;
     } 
     
