@@ -15,8 +15,8 @@ div#corpo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-p#yl{rgb(1, 1, 1);
-    color: rgb(1, 1, 1);
+p#yl{
+    color: rgb(0, 0, 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
 }
