@@ -3,7 +3,6 @@ let Legend_2 = document.getElementById('secondc');
 let Legend_3 = document.getElementById('thirdc');
 
 let Interval, Interval2, Interval3;
-let count2 = 20, count3 = 30, count1 = 10;
 
 let brawlhalla = [
     'Bödvar', 'Cassidy','Orion','Lord Vraxx','Gnash','Queen Nai','Hattori','SirRoland',
@@ -16,11 +15,14 @@ let brawlhalla = [
 
 function runInterval(){
 
+    let count2 = 20, count3 = 30, count1 = 10;
+
     Interval = setInterval(() => {
        
         let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
         Legend_1.innerHTML = `${randomL}`
-        if(count1 == 0){clearInterval(Interval)}
+        if(count1 == 0){clearInterval(Interval);
+            fontColorb(1)}
         console.log(Legend_1);
         count1--;
 
@@ -30,7 +32,8 @@ function runInterval(){
        
         let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
         Legend_2.innerHTML = `${randomL}`
-        if(count2 == 0){clearInterval(Interval2)}
+        if(count2 == 0){clearInterval(Interval2);
+            fontColorb(2)}
         console.log(Legend_1);
         count2--;
 
@@ -40,7 +43,8 @@ function runInterval(){
        
         let randomL = brawlhalla[Math.floor(Math.random() * brawlhalla.length)]
         Legend_3.innerHTML = `${randomL}`
-        if(count3 == 0){clearInterval(Interval3)}
+        if(count3 == 0){clearInterval(Interval3);
+            fontColorb(3)}
         console.log(Legend_1);
         count3--;
 
@@ -49,9 +53,41 @@ function runInterval(){
 }
 
 function Reset() {
-  
-    document.location.reload(true);
+    
+    fontColory()
+    runInterval()
   
   }
 
-runInterval()
+  function fontColory() {
+      
+    Legend_1.style.color = "rgb(250, 250, 121)";
+    Legend_2.style.color = "rgb(250, 250, 121)";
+    Legend_3.style.color = "rgb(250, 250, 121)";
+
+  }
+
+  function fontColorb(value) {
+
+    switch (value) {
+        case 1:
+            
+            Legend_1.style.color = "rgb(0, 0, 0)";
+
+            break;
+        case 2:
+            
+            Legend_2.style.color = "rgb(0, 0, 0)";
+
+            break;
+        case 3:
+            
+            Legend_3.style.color = "rgb(0, 0, 0)";
+
+            break;
+        default:
+            console.log('Error: Verify fontColorb() function!');
+            break;
+    } 
+    
+}
