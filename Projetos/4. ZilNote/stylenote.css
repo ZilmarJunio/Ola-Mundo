@@ -1,7 +1,19 @@
-input#text{
+.body{
+    align-items: center;
+    text-align: center;
+}
+.bloco1{
 
     color: rgb(53, 53, 53);
-    font-size: larger;
-    
-
+    font-size: 30px;
+    padding: auto;
 }
+
+/*#text{
+
+    color: rgb(53, 53, 53);
+    font-size: 25px;
+    border-radius: 5%;
+    padding: 100px 40px;
+
+}*/
